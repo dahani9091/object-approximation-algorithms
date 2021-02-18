@@ -1,18 +1,15 @@
-/*
-// C++ program to implement Cohen Sutherland algorithm
-// for line clipping.
-// including libraries
+
+
 #include <bits/stdc++.h>
 #include <graphics.h>
+#include <gtk/gtk.h>
+#include "clipping.h"
 using namespace std;
 
 // Global Variables
 int xmin, xmax, ymin, ymax;
 
-// Lines where co-ordinates are (x1, y1) and (x2, y2)
-struct lines {
-    int x1, y1, x2, y2;
-};
+
 
 // This will return the sign required.
 int sign(int x)
@@ -181,8 +178,11 @@ void clip(struct lines mylines)
 }
 
 // Driver Function
-int main()
+void clipping(GtkButton* btn, GtkWidget* win_menu)
 {
+    /// hide the menu window
+    gtk_widget_hide(win_menu);
+
     int gd = DETECT, gm;
 
     // Setting values of Clipping window
@@ -239,8 +239,8 @@ int main()
     getch();
     // For Closing the graph.
     closegraph();
-    return 0;
+
 }
 
-*/
+
 

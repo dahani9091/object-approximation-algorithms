@@ -6,6 +6,7 @@
     <property name="width-request">800</property>
     <property name="height-request">450</property>
     <property name="can-focus">False</property>
+    <property name="window-position">center-always</property>
     <child>
       <object class="GtkFixed">
         <property name="width-request">32</property>
@@ -269,7 +270,21 @@
           </object>
           <packing>
             <property name="x">382</property>
-            <property name="y">360</property>
+            <property name="y">352</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_backB">
+            <property name="label" translatable="yes">Back</property>
+            <property name="width-request">100</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">381</property>
+            <property name="y">396</property>
           </packing>
         </child>
       </object>
@@ -277,6 +292,7 @@
   </object>
   <object class="GtkWindow" id="win_bresenhamC">
     <property name="can-focus">False</property>
+    <property name="window-position">center-always</property>
     <child>
       <object class="GtkFixed">
         <property name="width-request">32</property>
@@ -418,6 +434,20 @@
             <property name="y">282</property>
           </packing>
         </child>
+        <child>
+          <object class="GtkButton" id="btn_backC">
+            <property name="label" translatable="yes">Back</property>
+            <property name="width-request">100</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">344</property>
+            <property name="y">377</property>
+          </packing>
+        </child>
       </object>
     </child>
   </object>
@@ -425,6 +455,7 @@
     <property name="width-request">800</property>
     <property name="height-request">450</property>
     <property name="can-focus">False</property>
+    <property name="window-position">center-always</property>
     <child>
       <object class="GtkFixed">
         <property name="width-request">32</property>
@@ -587,6 +618,20 @@
             <property name="y">308</property>
           </packing>
         </child>
+        <child>
+          <object class="GtkButton" id="btn_backL">
+            <property name="label" translatable="yes">Back</property>
+            <property name="width-request">100</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">383</property>
+            <property name="y">351</property>
+          </packing>
+        </child>
       </object>
     </child>
   </object>
@@ -594,6 +639,7 @@
     <property name="width-request">800</property>
     <property name="height-request">450</property>
     <property name="can-focus">False</property>
+    <property name="window-position">center-always</property>
     <child>
       <object class="GtkFixed">
         <property name="width-request">800</property>
@@ -664,8 +710,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton">
-                <property name="label" translatable="yes">Scan line</property>
+              <object class="GtkButton" id="btn_bezier">
+                <property name="label" translatable="yes">Bezier curve</property>
                 <property name="width-request">138</property>
                 <property name="height-request">40</property>
                 <property name="visible">True</property>
@@ -679,8 +725,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton">
-                <property name="label" translatable="yes">Clliping </property>
+              <object class="GtkButton" id="btn_scanline">
+                <property name="label" translatable="yes">Scan line</property>
                 <property name="width-request">138</property>
                 <property name="height-request">40</property>
                 <property name="visible">True</property>
@@ -694,8 +740,8 @@
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="btn_bezier">
-                <property name="label" translatable="yes">Bezier curve</property>
+              <object class="GtkButton" id="btn_clipping">
+                <property name="label" translatable="yes">Clliping </property>
                 <property name="width-request">138</property>
                 <property name="height-request">40</property>
                 <property name="visible">True</property>

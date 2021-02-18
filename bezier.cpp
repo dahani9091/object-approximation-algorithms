@@ -6,7 +6,8 @@
 //  entries
 GtkWidget* input_x1;GtkWidget* input_y1;GtkWidget* input_x2;GtkWidget* input_y2;
 GtkWidget* input_x3;GtkWidget* input_y3;GtkWidget* input_x4;GtkWidget* input_y4;
-
+// menu window
+GtkWidget* window_menu;
 void bezier(GtkButton* btn, GtkWidget* win){
     gtk_widget_hide(win);
     //points
@@ -44,8 +45,9 @@ void bezier_curve(GtkButton* btn, GtkWidget* win_menu){
     GtkBuilder* builder = gtk_builder_new_from_file ("glade/main.glade");
     //window
     GtkWidget* win_bezier = GTK_WIDGET(gtk_builder_get_object(builder,"win_bezier"));
-    // draw button
+    //buttons
     GtkWidget* btn_drawB = GTK_WIDGET(gtk_builder_get_object(builder,"btn_drawB"));
+    GtkWidget* btn_backB = GTK_WIDGET(gtk_builder_get_object(builder,"btn_backB"));
 	//  entries
     input_x1 = GTK_WIDGET(gtk_builder_get_object(builder,"input_x1"));
     input_y1 = GTK_WIDGET(gtk_builder_get_object(builder,"input_y1"));
@@ -56,17 +58,19 @@ void bezier_curve(GtkButton* btn, GtkWidget* win_menu){
     input_x4 = GTK_WIDGET(gtk_builder_get_object(builder,"input_x4"));
     input_y4 = GTK_WIDGET(gtk_builder_get_object(builder,"input_y4"));
 
+    //
+    window_menu = win_menu;
 
-	//printf("Enter the four control points :");
-	//for(i=0;i<4;i++){
-
-		//scanf("%d %d",&x[i],&y[i]);
-	//}
     /// connect signals
     g_signal_connect(btn_drawB,"clicked",G_CALLBACK(bezier),win_bezier);
+    g_signal_connect(btn_backB,"clicked",G_CALLBACK(back_To_menu),win_bezier);
 
     /// show window
     gtk_widget_show(win_bezier);
 }
 
+void back_To_menu (GtkButton* btn, GtkWidget* win){
+    gtk_widget_hide(win);
+    gtk_widget_show(window_menu);
+}
 

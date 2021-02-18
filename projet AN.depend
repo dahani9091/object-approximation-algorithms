@@ -3027,17 +3027,21 @@
 1613658063 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\circle.cpp
 	<stdio.h>
 
-1613676225 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\clipping.cpp
+1613689444 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\clipping.cpp
 	<bits/stdc++.h>
 	<graphics.h>
+	<gtk/gtk.h>
+	"clipping.h"
 
-1613657728 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\scanline.cpp
+1613689921 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\scanline.cpp
 	<conio.h>
 	<stdio.h>
 	<graphics.h>
 	<stdlib.h>
+	<gtk/gtk.h>
+	"scanline.h"
 
-1613686924 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\main.cpp
+1613689944 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -3045,10 +3049,12 @@
 	"graphics.h"
 	"bresenham.h"
 	"bezier.h"
+	"clipping.h"
+	"scanline.h"
 
-1613670999 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.h
+1613690715 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.h
 
-1613675535 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.cpp
+1613691856 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.cpp
 	"graphics.h"
 	<stdio.h>
 	<stdlib.h>
@@ -3056,12 +3062,16 @@
 	<gtk/gtk.h>
 	"bresenham.h"
 
-1613688532 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier.h
+1613691381 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier.h
 
-1613688532 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier.cpp
+1613691381 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier.cpp
 	<gtk/gtk.h>
 	<graphics.h>
 	<conio.h>
 	<math.h>
 	"bezier.h"
+
+1613689263 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\clipping.h
+
+1613689921 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\scanline.h
 

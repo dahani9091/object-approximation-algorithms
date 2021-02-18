@@ -6,6 +6,8 @@
 #include "graphics.h"
 #include "bresenham.h"
 #include "bezier.h"
+#include "clipping.h"
+#include "scanline.h"
 void load_css(void);
 
 
@@ -25,11 +27,16 @@ int main(int argc,char* argv[]){
     GtkWidget* btn_bresenhamL=GTK_WIDGET(gtk_builder_get_object(builder,"btn_bresenhamL"));
     GtkWidget* btn_bresenhamC=GTK_WIDGET(gtk_builder_get_object(builder,"btn_bresenhamC"));
     GtkWidget* btn_bezier=GTK_WIDGET(gtk_builder_get_object(builder,"btn_bezier"));
+    GtkWidget* btn_clipping=GTK_WIDGET(gtk_builder_get_object(builder,"btn_clipping"));
+    GtkWidget* btn_scanline=GTK_WIDGET(gtk_builder_get_object(builder,"btn_scanline"));
 
     ///connect signals
     g_signal_connect(btn_bresenhamL,"clicked",G_CALLBACK(bresenham_line),win_menu);
     g_signal_connect(btn_bresenhamC,"clicked",G_CALLBACK(bresenham_circle),win_menu);
     g_signal_connect(btn_bezier,"clicked",G_CALLBACK(bezier_curve),win_menu);
+    g_signal_connect(btn_clipping,"clicked",G_CALLBACK(clipping),win_menu);
+    g_signal_connect(btn_scanline,"clicked",G_CALLBACK(main_scanline),win_menu);
+
 
 
     ///show what was made

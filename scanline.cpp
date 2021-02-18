@@ -1,13 +1,13 @@
 
-/*
+
 #include <conio.h>
 #include <stdio.h>
 #include <graphics.h>
 #include <stdlib.h>
+#include <gtk/gtk.h>
+#include "scanline.h"
 
-typedef struct {
-   int x; int y;
-} point;
+
 
 
 void scanline()
@@ -129,15 +129,16 @@ void scanline()
 }
 
 
-int main() //START OF MAIN
+void main_scanline(GtkButton* btn, GtkWidget* win_menu) //START OF MAIN
 {
+    /// hide the menu window
+    gtk_widget_hide(win_menu);
     initwindow(500,600);
     cleardevice();
     scanline();
     closegraph(); //CLOSE OF GRAPH
     getch();
-    return 0;
 }
 
 
-*/
+
