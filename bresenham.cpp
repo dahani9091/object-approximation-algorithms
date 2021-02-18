@@ -124,11 +124,7 @@ void bresenham_circle_start(GtkButton* btn, GtkWidget* win){
     yc = atoi(gtk_entry_get_text(GTK_ENTRY(entry_y)));
     r = atoi(gtk_entry_get_text(GTK_ENTRY(entry_r)));
 
-/*
-	printf("Enter center of circle :\n");
-	scanf("%d\n%d",&xc,&yc);
-	printf("Enter radius of circle :\n");
-	scanf("%d",&r);*/
+
 	initgraph(&gd,&gm,"C://TurboC3//BGI");
 	x=0;
 	y=r;

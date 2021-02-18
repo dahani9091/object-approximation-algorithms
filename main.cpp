@@ -1,9 +1,11 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <gtk/gtk.h>
 #include "graphics.h"
 #include "bresenham.h"
+#include "bezier.h"
 void load_css(void);
 
 
@@ -22,10 +24,12 @@ int main(int argc,char* argv[]){
     win_menu = GTK_WIDGET(gtk_builder_get_object(builder,"win_menu"));
     GtkWidget* btn_bresenhamL=GTK_WIDGET(gtk_builder_get_object(builder,"btn_bresenhamL"));
     GtkWidget* btn_bresenhamC=GTK_WIDGET(gtk_builder_get_object(builder,"btn_bresenhamC"));
+    GtkWidget* btn_bezier=GTK_WIDGET(gtk_builder_get_object(builder,"btn_bezier"));
 
     ///connect signals
     g_signal_connect(btn_bresenhamL,"clicked",G_CALLBACK(bresenham_line),win_menu);
     g_signal_connect(btn_bresenhamC,"clicked",G_CALLBACK(bresenham_circle),win_menu);
+    g_signal_connect(btn_bezier,"clicked",G_CALLBACK(bezier_curve),win_menu);
 
 
     ///show what was made
@@ -55,3 +59,4 @@ void load_css(void)
     //
     g_object_unref(provider);
 }
+

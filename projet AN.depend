@@ -3019,14 +3019,15 @@
 	"graphics.h"
 	"Line.h"
 
-1613609567 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier_algo castlejau.cpp
+1613675595 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier_algo castlejau.cpp
+	<graphics.h>
 	<conio.h>
 	<math.h>
 
 1613658063 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\circle.cpp
 	<stdio.h>
 
-1613609844 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\clipping.cpp
+1613676225 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\clipping.cpp
 	<bits/stdc++.h>
 	<graphics.h>
 
@@ -3036,21 +3037,31 @@
 	<graphics.h>
 	<stdlib.h>
 
-1613670932 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\main.cpp
+1613686924 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\main.cpp
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<gtk/gtk.h>
 	"graphics.h"
 	"bresenham.h"
+	"bezier.h"
 
 1613670999 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.h
 
-1613670966 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.cpp
+1613675535 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.cpp
 	"graphics.h"
 	<stdio.h>
 	<stdlib.h>
 	<math.h>
 	<gtk/gtk.h>
 	"bresenham.h"
+
+1613688532 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier.h
+
+1613688532 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier.cpp
+	<gtk/gtk.h>
+	<graphics.h>
+	<conio.h>
+	<math.h>
+	"bezier.h"
 

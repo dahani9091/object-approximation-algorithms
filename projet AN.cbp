@@ -37,10 +37,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Bezier_Algo CastleJau.cpp" />
-		<Unit filename="Circle.cpp" />
 		<Unit filename="Clipping.cpp" />
-		<Unit filename="Line.cpp" />
-		<Unit filename="projet AN.cbp" />
+		<Unit filename="bresenham.cpp" />
+		<Unit filename="bresenham.h" />
+		<Unit filename="main.cpp" />
 		<Unit filename="scanline.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
