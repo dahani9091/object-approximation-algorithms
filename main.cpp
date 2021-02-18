@@ -11,22 +11,24 @@ void load_css(void);
 int main(int argc,char* argv[]){
     gtk_init(&argc,&argv);
 
-    // loading css
+    /// loading css
     load_css();
 
-    //  create and get builder from 'glade' files
+    ///  create and get builder from 'glade' files
     GtkBuilder* builder = gtk_builder_new_from_file ("glade/main.glade");
 
-    //  create and get other widjets from 'glade' files  btn_bresenhamL
+    ///  create and get other widjets from 'glade' files  btn_bresenhamL
     GtkWidget* win_menu;
     win_menu = GTK_WIDGET(gtk_builder_get_object(builder,"win_menu"));
     GtkWidget* btn_bresenhamL=GTK_WIDGET(gtk_builder_get_object(builder,"btn_bresenhamL"));
+    GtkWidget* btn_bresenhamC=GTK_WIDGET(gtk_builder_get_object(builder,"btn_bresenhamC"));
 
-    //connect signals
+    ///connect signals
     g_signal_connect(btn_bresenhamL,"clicked",G_CALLBACK(bresenham_line),win_menu);
+    g_signal_connect(btn_bresenhamC,"clicked",G_CALLBACK(bresenham_circle),win_menu);
 
 
-    //show what was made
+    ///show what was made
     gtk_widget_show_all(win_menu);
 
     gtk_main();

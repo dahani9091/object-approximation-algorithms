@@ -3019,3 +3019,38 @@
 	"graphics.h"
 	"Line.h"
 
+1613609567 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bezier_algo castlejau.cpp
+	<conio.h>
+	<math.h>
+
+1613658063 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\circle.cpp
+	<stdio.h>
+
+1613609844 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\clipping.cpp
+	<bits/stdc++.h>
+	<graphics.h>
+
+1613657728 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\scanline.cpp
+	<conio.h>
+	<stdio.h>
+	<graphics.h>
+	<stdlib.h>
+
+1613670932 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<gtk/gtk.h>
+	"graphics.h"
+	"bresenham.h"
+
+1613670999 c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.h
+
+1613670966 source:c:\users\legion\onedrive\desktop\projet an\object-approximation-algorithms\bresenham.cpp
+	"graphics.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<gtk/gtk.h>
+	"bresenham.h"
+
