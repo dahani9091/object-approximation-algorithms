@@ -1,5 +1,5 @@
-#ifndef LINE_H
-#define LINE_H
+#ifndef BRESENHAM_H
+#define BRESENHAM_H
 
 void bresenham_line(GtkButton* btn, GtkWidget* win_menu);
 void bresenham_circle();

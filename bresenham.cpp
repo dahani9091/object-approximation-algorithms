@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<math.h>
 #include <gtk/gtk.h>
-#include "Line.h"
+#include "bresenham.h"
 
 void bresenham_line(GtkButton* btn, GtkWidget* win_menu)
 {

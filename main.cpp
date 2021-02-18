@@ -3,7 +3,7 @@
 #include <string.h>
 #include <gtk/gtk.h>
 #include "graphics.h"
-#include "Line.h"
+#include "bresenham.h"
 void load_css(void);
 
 
