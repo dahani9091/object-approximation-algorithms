@@ -136,7 +136,7 @@ void main_scanline(GtkButton* btn, GtkWidget* win_menu) //START OF MAIN
     initwindow(500,600);
     cleardevice();
     scanline();
-    closegraph(); //CLOSE OF GRAPH
+    closegraph(); //CLOSE THE GRAPH
     getch();
 }
 
